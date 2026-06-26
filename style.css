@@ -1,0 +1,83 @@
+/* basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e8f5e9;
+    color: #333;
+    padding: 20px;
+}
+
+/* main heading style */
+h1 {
+    text-align: center;
+    color: #2e7d32;
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+/* container holds everything in the middle */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+/* make video fit its container */
+video {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 15px;
+    border: 2px solid #2e7d32;
+}
+
+/* description paragraph */
+p {
+    font-size: 1em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #444;
+}
+
+/* the toggle button */
+#toggleBtn {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 25px;
+    background-color: #2e7d32;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+/* hover effect on button */
+#toggleBtn:hover {
+    background-colour: #1b5e20; /* typo: should be background-color but page still works */
+}
+
+/* focus style for keyboard users - accessibility */
+#toggleBtn:focus {
+    outline: 3px solid #ffeb3b;
+    outline-offset: 2px;
+}
+
+/* responsive: on small screens make heading a bit smaller */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.5em;
+    }
+
+    #toggleBtn {
+        width: 100%; /* button takes full width on mobile */
+    }
+}
