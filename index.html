@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- meta tags for responsivness -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wildlife Conservation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <!-- Page heading -->
+        <h1>Save Our Wildlife</h1>
+
+        <!-- embedded video with controls - wildlife.mp4 should be in same folder -->
+        <video id="wildlifeVideo" controls aria-label="Wildlife conservation video">
+            <source src="wildlife.mp4" type="video/mp4">
+            <!-- fallback message if browser doesnt support video -->
+            Your browser does not support the video tag. Please upgrade your browser.
+        </video>
+
+        <!-- short description below video -->
+        <p>
+            Wildlife around the world is under threat due to habitat loss, climate change, and poaching.
+            Every species plays a vital role in our ecosystem. Together, we can make a difference —
+            support conservation efforts and help protect the animals that share our planet.
+        </p>
+
+        <!-- button to hide/play video -->
+        <button id="toggleBtn" aria-controls="wildlifeVideo">Hide Video</button>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
